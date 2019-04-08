@@ -13,6 +13,10 @@
 		661AF17422563F97000AB874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 661AF17322563F97000AB874 /* Assets.xcassets */; };
 		661AF17722563F97000AB874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661AF17522563F97000AB874 /* LaunchScreen.storyboard */; };
 		661AF17A22563F97000AB874 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 661AF17922563F97000AB874 /* main.m */; };
+		661AF1842256446F000AB874 /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 661AF1832256446F000AB874 /* Presenter.m */; };
+		661AF189225648EA000AB874 /* DataExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 661AF188225648EA000AB874 /* DataExtractor.m */; };
+		661AF18D22564C60000AB874 /* DataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 661AF18C22564C60000AB874 /* DataParser.m */; };
+		661AF19022564CE7000AB874 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 661AF18F22564CE7000AB874 /* Order.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,18 @@
 		661AF17622563F97000AB874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		661AF17822563F97000AB874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		661AF17922563F97000AB874 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		661AF18122564209000AB874 /* IView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IView.h; sourceTree = "<group>"; };
+		661AF1822256446F000AB874 /* Presenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
+		661AF1832256446F000AB874 /* Presenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
+		661AF185225644B4000AB874 /* IPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPresenter.h; sourceTree = "<group>"; };
+		661AF1862256475E000AB874 /* IDataExtractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDataExtractor.h; sourceTree = "<group>"; };
+		661AF187225648EA000AB874 /* DataExtractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataExtractor.h; sourceTree = "<group>"; };
+		661AF188225648EA000AB874 /* DataExtractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataExtractor.m; sourceTree = "<group>"; };
+		661AF18A22564B44000AB874 /* IDataParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDataParser.h; sourceTree = "<group>"; };
+		661AF18B22564C60000AB874 /* DataParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataParser.h; sourceTree = "<group>"; };
+		661AF18C22564C60000AB874 /* DataParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataParser.m; sourceTree = "<group>"; };
+		661AF18E22564CE7000AB874 /* Order.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		661AF18F22564CE7000AB874 /* Order.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +74,22 @@
 		661AF16922563F93000AB874 /* ProductCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				661AF16A22563F93000AB874 /* AppDelegate.h */,
-				661AF16B22563F93000AB874 /* AppDelegate.m */,
+				661AF18122564209000AB874 /* IView.h */,
 				661AF16D22563F93000AB874 /* ViewController.h */,
 				661AF16E22563F93000AB874 /* ViewController.m */,
+				661AF185225644B4000AB874 /* IPresenter.h */,
+				661AF1822256446F000AB874 /* Presenter.h */,
+				661AF1832256446F000AB874 /* Presenter.m */,
+				661AF18A22564B44000AB874 /* IDataParser.h */,
+				661AF18B22564C60000AB874 /* DataParser.h */,
+				661AF18C22564C60000AB874 /* DataParser.m */,
+				661AF18E22564CE7000AB874 /* Order.h */,
+				661AF18F22564CE7000AB874 /* Order.m */,
+				661AF1862256475E000AB874 /* IDataExtractor.h */,
+				661AF187225648EA000AB874 /* DataExtractor.h */,
+				661AF188225648EA000AB874 /* DataExtractor.m */,
+				661AF16A22563F93000AB874 /* AppDelegate.h */,
+				661AF16B22563F93000AB874 /* AppDelegate.m */,
 				661AF17022563F93000AB874 /* Main.storyboard */,
 				661AF17322563F97000AB874 /* Assets.xcassets */,
 				661AF17522563F97000AB874 /* LaunchScreen.storyboard */,
@@ -142,7 +170,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				661AF16F22563F93000AB874 /* ViewController.m in Sources */,
+				661AF189225648EA000AB874 /* DataExtractor.m in Sources */,
 				661AF17A22563F97000AB874 /* main.m in Sources */,
+				661AF1842256446F000AB874 /* Presenter.m in Sources */,
+				661AF19022564CE7000AB874 /* Order.m in Sources */,
+				661AF18D22564C60000AB874 /* DataParser.m in Sources */,
 				661AF16C22563F93000AB874 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

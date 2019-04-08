@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Presenter.h"
 
 @interface ViewController ()
 
@@ -16,8 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    _presenter = [[Presenter alloc] init];
 }
 
+- (IBAction)onCalculateButtonTap:(UIButton *)sender {
+    [self.presenter triggerCalculateButtonTap];
+}
+
+- (void)setBGColor:(UIColor *)color {
+    [self.view setBackgroundColor: color];
+}
 
 @end

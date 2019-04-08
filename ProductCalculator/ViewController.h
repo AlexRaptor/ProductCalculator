@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IView.h"
 
-@interface ViewController : UIViewController
+@protocol IPresenter;
 
+@interface ViewController : UIViewController <IView>
+
+@property (nonatomic, strong) id<IPresenter> presenter;
 
 @end
 
