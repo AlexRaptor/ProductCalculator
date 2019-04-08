@@ -19,7 +19,7 @@
     if (error != nil) {
         NSLog(@"%@", error.localizedDescription);
     } else {
-        return [dataString componentsSeparatedByString:@";\n"];
+        return [dataString componentsSeparatedByString:@"\n"];
     }
     
     return [NSArray array];

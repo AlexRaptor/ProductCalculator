@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol IDataParser <NSObject>
 
-- (NSArray<NSString *, Order *> *)dataWithContentsOfArray:(NSArray<NSString *> *)array;
+- (NSDictionary<NSString *, NSArray<Order *> *> *)dataWithContentsOfArray:(NSArray<NSString *> *)array;
 
 @end
 

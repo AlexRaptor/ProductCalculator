@@ -10,4 +10,8 @@
 
 @implementation Order
 
+-(NSString *)description {
+    return [NSString stringWithFormat:@"{%@: %ld}", self.product, self.count];
+}
+
 @end

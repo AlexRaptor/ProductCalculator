@@ -17,6 +17,7 @@
 		661AF189225648EA000AB874 /* DataExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 661AF188225648EA000AB874 /* DataExtractor.m */; };
 		661AF18D22564C60000AB874 /* DataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 661AF18C22564C60000AB874 /* DataParser.m */; };
 		661AF19022564CE7000AB874 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 661AF18F22564CE7000AB874 /* Order.m */; };
+		6650836B225B1B670069A8C6 /* orders.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6650836A225B1B670069A8C6 /* orders.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		661AF18C22564C60000AB874 /* DataParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataParser.m; sourceTree = "<group>"; };
 		661AF18E22564CE7000AB874 /* Order.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
 		661AF18F22564CE7000AB874 /* Order.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		6650836A225B1B670069A8C6 /* orders.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = orders.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				661AF17522563F97000AB874 /* LaunchScreen.storyboard */,
 				661AF17822563F97000AB874 /* Info.plist */,
 				661AF17922563F97000AB874 /* main.m */,
+				6650836A225B1B670069A8C6 /* orders.txt */,
 			);
 			path = ProductCalculator;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				661AF17722563F97000AB874 /* LaunchScreen.storyboard in Resources */,
 				661AF17422563F97000AB874 /* Assets.xcassets in Resources */,
 				661AF17222563F93000AB874 /* Main.storyboard in Resources */,
+				6650836B225B1B670069A8C6 /* orders.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
